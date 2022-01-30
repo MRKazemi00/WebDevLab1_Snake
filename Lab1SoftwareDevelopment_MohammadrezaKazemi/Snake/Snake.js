@@ -48,6 +48,15 @@ class Snake {
         this.xspeed = x;
         this.yspeed = y;
     }
+    
+    checkDir(x,y){
+      if(this.xspeed === x && this.yspeed === y){
+        return true;
+      }else{
+        return false;
+      }
+      
+    }
 
     eat(pos){
      let d = dist(this.x, this.y, pos.x, pos.y);
