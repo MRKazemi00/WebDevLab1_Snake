@@ -21,6 +21,7 @@ function pickLocation(){
 
 function draw() {
 background(51)
+snake.death();
 snake.update();
 snake.show();
 fill(255,0,100);
