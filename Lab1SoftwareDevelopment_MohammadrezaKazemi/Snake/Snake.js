@@ -15,8 +15,13 @@ class Snake {
         if(d < 1){
           this.total = 0;
           this.tail= [];
+          update().stop;
+          textSize(32);
+          text('You lost, refresh to start again', width/2, height);
+          fill(0, 102, 153);
         }
       }
+      
     }
 
     update(){
